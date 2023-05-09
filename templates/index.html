@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>GitHub Commit Analyzer</title>
+</head>
+<body>
+    <main class="container">
+        <section class="title glass">
+            <h1>GitHub Commit Analyzer</h1>
+        </section>
+
+        <section class="form-container">
+            <form method="POST" class="glass form">
+                <label for="username">GitHub Username:</label>
+                <input type="text" id="username" name="username" required>
+                <button type="submit">Analyze</button>
+            </form>
+        </section>
+
+        {% if chart and profuctive_day %}
+            <section class="result-container">
+                <h2>Commit Graph for @{{ username }}</h2>
+                <div class="chart-container glass">{{ chart|safe }}</div>
+                <div class="interpretation glass">
+                    <h3>Commit Analysis</h3>
+                    <p>Most Productive Day: {{ profuctive_day }}</p>
+                    <p>Least Productive Day: {{ least_productive_day }}</p>
+                    <p>TagLine: {{ tagline }}</p>
+                </div>
+            </section>
+        {% endif %}
+    </main>
+</body>
+</html>

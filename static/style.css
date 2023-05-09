@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #ECEDDC, #B3C2BF);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+label, input {
+    font-size: 1.2em;
+}
+
+input {
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: none;
+    color: white;
+}
+
+button {
+    font-size: 1.2em;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: royalblue;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+
+.chart-container {
+    margin-bottom: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.interpretation {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    label, input, button {
+        font-size: 1em;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .form-container {
+        flex-direction: column;
+    }
+
+    label, input, button {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    h2, h3 {
+        font-size: 1.2em;
+    }
+}
