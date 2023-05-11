@@ -1,0 +1,7 @@
+plotly
+flask
+matplotlib
+requests
+bs4
+pandas
+openai
