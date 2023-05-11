@@ -1,7 +1,7 @@
 
 # Commit Analyser
 
-Commit Analyser to see which days of the week you commit the most
+Commit Analyser to see which days of the week you commit the most and make a cool tagline with ChatGPT.
 
 ## How to use
 
